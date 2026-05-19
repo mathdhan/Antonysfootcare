@@ -15,9 +15,12 @@ closeBtn.classList.add("close-menu");
 navbar.prepend(closeBtn);
 
 // Open Menu
-menuToggle.addEventListener("click", () => {
+// Toggle Menu Open & Close
+menuToggle.addEventListener("click", (e) => {
 
-  navbar.classList.add("active");
+  e.stopPropagation();
+
+  navbar.classList.toggle("active");
 
 });
 
