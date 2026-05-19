@@ -1,5 +1,10 @@
 /* ========================= */
-/* common.css */
+/* COMMON CSS */
+/* Antony's Foot Health Care */
+/* ========================= */
+
+/* ========================= */
+/* RESET */
 /* ========================= */
 
 * {
@@ -8,16 +13,15 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
-  padding: 0;
-
   width: 100%;
   overflow-x: hidden;
+}
 
+body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-
   color: #333;
   background-color: #f7f7f7;
 }
@@ -26,6 +30,10 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
 
 .container {
   width: 100%;
@@ -36,7 +44,7 @@ img {
 }
 
 /* ========================= */
-/* Header */
+/* HEADER */
 /* ========================= */
 
 header {
@@ -45,16 +53,21 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-width:100%;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 18px 0;
+  position: relative;
 }
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
 
 .logo {
   display: flex;
@@ -63,35 +76,37 @@ width:100%;
 }
 
 .logo img {
-  width: 70px;
+  width: 80px;
   height: auto;
   object-fit: contain;
 }
 
 .logo-text h1 {
-  font-size: 1.8rem;
-  margin-bottom: 2px;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 5px;
 }
 
 .logo-text p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #d1fae5;
 }
 
 /* ========================= */
-/* Navigation */
+/* NAVIGATION */
 /* ========================= */
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 35px;
 }
 
 .navbar a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 1.05rem;
   transition: 0.3s;
 }
 
@@ -101,44 +116,78 @@ width:100%;
 }
 
 /* ========================= */
-/* Mobile Menu */
+/* HAMBURGER */
 /* ========================= */
 
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: white;
   cursor: pointer;
 }
 
 /* ========================= */
-/* Hero Section */
+/* HERO SECTION */
 /* ========================= */
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-    url('images/hero-foot-health.png') center/cover no-repeat;
-  height: 550px;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('images/hero-foot-health.png');
+
+  background-size: cover;
+  background-position: center;
+
+  height: 650px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
   color: white;
-  width:100%;
 }
 
 .hero-content h2 {
-  font-size: 3rem;
-  margin-bottom: 15px;
+  font-size: 4rem;
+  margin-bottom: 25px;
+  line-height: 1.2;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  max-width: 700px;
+  font-size: 1.3rem;
+  max-width: 800px;
   margin: auto;
 }
 
 /* ========================= */
-/* Common Page Content */
+/* COMMON SECTION */
+/* ========================= */
+
+section {
+  padding: 90px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-title h2 {
+  font-size: 2.8rem;
+  color: #0f766e;
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  color: #666;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* ========================= */
+/* PAGE SECTION */
 /* ========================= */
 
 .page-section {
@@ -157,221 +206,32 @@ width:100%;
 }
 
 /* ========================= */
-/* Footer */
+/* BUTTONS */
 /* ========================= */
 
-.footer {
-  background-color: #111827;
-  color: #d1d5db;
-
-  padding-top: 60px;
-}
-
-.footer-container {
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-  gap: 40px;
-
-  padding-bottom: 50px;
-}
-
-.footer-column h3 {
-  color: white;
-
-  margin-bottom: 20px;
-
-  font-size: 1.4rem;
-}
-
-.footer-column p {
-  margin-bottom: 12px;
-
-  line-height: 1.7;
-
-  color: #d1d5db;
-}
-
-/* Footer Links */
-
-.footer-links {
-  list-style: none;
-}
-
-.footer-links li {
-  margin-bottom: 12px;
-}
-
-.footer-links a {
-  color: #d1d5db;
-
-  text-decoration: none;
-
-  transition: 0.3s;
-}
-
-.footer-links a:hover {
-  color: #25D366;
-  padding-left: 5px;
-}
-
-/* Footer Bottom */
-
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-
-  text-align: center;
-
-  padding: 20px 0;
-
-  font-size: 0.95rem;
-
-  color: #9ca3af;
-}
-
-/* ========================= */
-/* Mobile Responsive */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-  .footer {
-    text-align: center;
-  }
-
-  .footer-container {
-    gap: 30px;
-  }
-
-}
-/* ========================= */
-/* Responsive Design */
-/* ========================= */
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .navbar {
-    display: none;
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .header-container {
-    flex-wrap: wrap;
-  }
-
-  .hero {
-    height: 350px;
-    padding: 20px;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-}
-/* ========================= */
-/* WhatsApp Floating Button */
-/* ========================= */
-
-.whatsapp-float {
-  position: fixed;
-
-  bottom: 25px;
-  right: 25px;
-
-  width: 70px;
-  height: 70px;
-
-  background-color: #25D366;
-
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-
-  z-index: 9999;
-
-  transition: 0.3s ease;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-.whatsapp-float img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-}
-/* ========================= */
-/* Common Sections */
-/* ========================= */
-
-section {
-  padding: 80px 0;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  color: #0f7b72;
-  margin-bottom: 15px;
-}
-
-.section-title p {
-  color: #666;
-}
-
-/* ========================= */
-/* Buttons */
-/* ========================= */
-
-.btn-primary {
+.btn-primary,
+.service-btn,
+.contact-btn {
   display: inline-block;
-
-  background-color: #0f7b72;
+  background-color: #0f766e;
   color: white;
-
   padding: 14px 28px;
-
-  border-radius: 8px;
-
+  border-radius: 10px;
   text-decoration: none;
-
-  transition: 0.3s;
+  font-weight: bold;
+  transition: 0.35s ease;
 }
 
-.btn-primary:hover {
-  background-color: #0c5f58;
+.btn-primary:hover,
+.service-btn:hover,
+.contact-btn:hover {
+  background-color: #0b5f58;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* ========================= */
-/* Welcome Section */
+/* WELCOME SECTION */
 /* ========================= */
 
 .welcome-container {
@@ -386,85 +246,121 @@ section {
 }
 
 /* ========================= */
-/* Service Cards */
-/* ========================= */
-
-/* ========================= */
-/* Services / Why Choose / Testimonials */
+/* GRID LAYOUTS */
 /* ========================= */
 
 .services-grid,
 .why-grid,
-.testimonial-grid {
-
+.testimonial-grid,
+.contact-grid,
+.mission-grid,
+.trust-grid,
+.problems-grid,
+.process-grid,
+.areas-grid,
+.care-grid {
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
   gap: 30px;
 }
 
 /* ========================= */
-/* Cards */
+/* SERVICES GRID */
+/* ========================= */
+
+.services-grid,
+.why-grid,
+.testimonial-grid,
+.mission-grid,
+.trust-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* ========================= */
+/* CONTACT GRID */
+/* ========================= */
+
+.contact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ========================= */
+/* AREA GRID */
+/* ========================= */
+
+.areas-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+/* ========================= */
+/* CARE GRID */
+/* ========================= */
+
+.care-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ========================= */
+/* PROCESS GRID */
+/* ========================= */
+
+.problems-grid,
+.process-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* ========================= */
+/* CARDS */
 /* ========================= */
 
 .service-card,
 .why-card,
-.testimonial-card {
-
-  background: #d5e8dc;
-
-  padding: 30px;
-
-  border-radius: 15px;
-
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-
+.testimonial-card,
+.contact-card,
+.mission-card,
+.trust-card,
+.problem-card,
+.process-card,
+.care-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   transition: all 0.35s ease;
-
-  cursor: pointer;
-
   border: 1px solid transparent;
 }
 
-/* ========================= */
-/* Hover Effects */
-/* ========================= */
-
 .service-card:hover,
 .why-card:hover,
-.testimonial-card:hover {
-
+.testimonial-card:hover,
+.contact-card:hover,
+.mission-card:hover,
+.trust-card:hover,
+.problem-card:hover,
+.process-card:hover,
+.care-card:hover {
   transform: translateY(-8px);
 
   box-shadow:
-    0 14px 35px rgba(0,0,0,0.18),
-    0 8px 15px rgba(15,123,114,0.15);
+    0 15px 35px rgba(0,0,0,0.18),
+    0 8px 18px rgba(15,123,114,0.15);
 
-  border-color: #0f7b72;
+  border-color: #0f766e;
 }
 
 /* ========================= */
-/* CTA Section */
+/* SERVICE IMAGES */
 /* ========================= */
 
-.cta-section {
-  background-color: #0f7b72;
-  color: white;
-  text-align: center;
-}
-
-.cta-section h2 {
-  font-size: 2.5rem;
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
   margin-bottom: 20px;
 }
 
-.cta-section p {
-  margin-bottom: 30px;
-}
-
 /* ========================= */
-/* FAQ Section */
+/* FAQ SECTION */
 /* ========================= */
 
 .faq-item {
@@ -472,653 +368,461 @@ section {
 }
 
 .faq-item h3 {
-  color: #0f7b72;
+  color: #0f766e;
   margin-bottom: 10px;
 }
 
 /* ========================= */
-/* Responsive */
+/* CTA SECTIONS */
+/* ========================= */
+
+.cta-section,
+.about-cta,
+.services-cta {
+  text-align: center;
+  color: white;
+}
+
+.cta-section,
+.about-cta {
+  background-color: #0f766e;
+}
+
+.services-cta {
+  background-color: #f06e65;
+}
+
+.cta-section h2,
+.about-cta h2,
+.services-cta h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p,
+.about-cta p,
+.services-cta p {
+  margin-bottom: 30px;
+}
+
+/* ========================= */
+/* CONTACT */
+/* ========================= */
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.contact-card h3 {
+  color: #0f766e;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* ========================= */
+/* MAP */
+/* ========================= */
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ========================= */
+/* HOURS */
+/* ========================= */
+
+.hours-card {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.hours-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0f766e;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ========================= */
+/* ABOUT */
+/* ========================= */
+
+.about-profile-container,
+.qualifications-container,
+.treatment-container,
+.diabetic-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.profile-image img,
+.qualifications-image img,
+.treatment-image img,
+.diabetic-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ========================= */
+/* QUALIFICATION LIST */
+/* ========================= */
+
+.qualification-list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.qualification-list li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+/* ========================= */
+/* TREATMENT CONTENT */
+/* ========================= */
+
+.treatment-content ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.treatment-content li {
+  margin-bottom: 12px;
+}
+
+/* ========================= */
+/* PHILOSOPHY */
+/* ========================= */
+
+.philosophy-card {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* ========================= */
+/* SERVICE AREA */
+/* ========================= */
+
+.service-area-text {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* ========================= */
+/* HOME VISIT */
+/* ========================= */
+
+.home-visit-card {
+  background-color: #0f766e;
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.home-visit-card h2 {
+  margin-bottom: 20px;
+}
+
+.home-visit-card p {
+  margin-bottom: 30px;
+}
+
+/* ========================= */
+/* CARE CARD */
+/* ========================= */
+
+.care-card h3 {
+  margin-bottom: 20px;
+  color: #0f766e;
+}
+
+.care-card ul {
+  padding-left: 20px;
+}
+
+.care-card li {
+  margin-bottom: 12px;
+}
+
+/* ========================= */
+/* AREA CARD */
+/* ========================= */
+
+.area-card {
+  background-color: #0f766e;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.area-card:hover {
+  transform: translateY(-5px);
+  background-color: #0b5f58;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+  background-color: #111827;
+  color: #d1d5db;
+  padding-top: 70px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+.footer-column h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-column p {
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #d1d5db;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #25D366;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  padding: 20px 0;
+  color: #9ca3af;
+}
+
+/* ========================= */
+/* WHATSAPP FLOAT */
+/* ========================= */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 70px;
+  height: 70px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 38px;
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
 /* ========================= */
 
 @media (max-width: 768px) {
 
-  .welcome-container {
+  /* Header */
+
+  .header-container {
+    flex-wrap: nowrap;
+    padding: 15px 0;
+    align-items: center;
+  }
+
+  .logo {
+    width: 85%;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .logo-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .logo-text p {
+    font-size: 0.9rem;
+  }
+
+  /* Hamburger */
+
+  .menu-toggle {
+    display: block;
+    font-size: 2.3rem;
+    margin-left: auto;
+    padding-right: 5px;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0f766e;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 1.1rem;
+  }
+
+  /* Hero */
+
+  .hero {
+    height: 500px;
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Grids */
+
+  .welcome-container,
+  .about-profile-container,
+  .qualifications-container,
+  .treatment-container,
+  .diabetic-container {
     grid-template-columns: 1fr;
+  }
+
+  /* Hours */
+
+  .hours-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* Footer */
+
+  .footer {
+    text-align: center;
+  }
+
+  /* Sections */
+
+  section {
+    padding: 70px 0;
   }
 
   .section-title h2 {
     font-size: 2rem;
   }
 
-}
-/* ========================= */
-/* Contact Cards */
-/* ========================= */
-
-.contact-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
-  gap: 30px;
-}
-
-.contact-card {
-
-  background: white;
-
-  padding: 40px 30px;
-
-  border-radius: 20px;
-
-  text-align: center;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-  transition: all 0.35s ease;
-
-  border: 1px solid transparent;
-}
-
-.contact-card:hover {
-
-  transform: translateY(-8px);
-
-  box-shadow:
-    0 15px 35px rgba(0,0,0,0.18),
-    0 8px 18px rgba(15,123,114,0.15);
-
-  border-color: #0f7b72;
-}
-
-.contact-icon {
-
-  font-size: 3rem;
-
-  margin-bottom: 20px;
-}
-
-.contact-card h3 {
-
-  margin-bottom: 15px;
-
-  color: #0f7b72;
-}
-
-.contact-card p {
-
-  margin-bottom: 25px;
-}
-
-/* ========================= */
-/* Contact Button */
-/* ========================= */
-
-.contact-btn {
-
-  display: inline-block;
-
-  background-color: #0f7b72;
-
-  color: white;
-
-  padding: 12px 24px;
-
-  border-radius: 8px;
-
-  text-decoration: none;
-
-  transition: 0.3s;
-}
-
-.contact-btn:hover {
-
-  background-color: #0b5f58;
-}
-
-/* ========================= */
-/* Contact Form */
-/* ========================= */
-
-.contact-form {
-
-  max-width: 700px;
-
-  margin: auto;
-}
-
-.form-group {
-
-  margin-bottom: 20px;
-}
-
-.contact-form input,
-.contact-form textarea {
-
-  width: 100%;
-
-  padding: 16px;
-
-  border: 1px solid #ddd;
-
-  border-radius: 10px;
-
-  font-size: 1rem;
-}
-
-/* ========================= */
-/* Google Map */
-/* ========================= */
-
-.map-container {
-
-  border-radius: 20px;
-
-  overflow: hidden;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* ========================= */
-/* Opening Hours */
-/* ========================= */
-
-.hours-card {
-
-  max-width: 700px;
-
-  margin: auto;
-
-  background: white;
-
-  padding: 40px;
-
-  border-radius: 20px;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-.hours-card h2 {
-
-  margin-bottom: 30px;
-
-  color: #0f7b72;
-
-  text-align: center;
-}
-
-.hours-row {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  padding: 15px 0;
-
-  border-bottom: 1px solid #eee;
-}
-
-/* ========================= */
-/* Responsive */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-  .hours-row {
-
-    flex-direction: column;
-
-    gap: 5px;
+  .cta-section h2,
+  .about-cta h2,
+  .services-cta h2 {
+    font-size: 2rem;
   }
 
-}
-/* ========================= */
-/* About Profile */
-/* ========================= */
-
-.about-profile-container,
-.qualifications-container {
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 50px;
-
-  align-items: center;
-}
-
-.profile-image img,
-.qualifications-image img {
-
-  width: 100%;
-
-  border-radius: 20px;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* ========================= */
-/* Mission / Trust Cards */
-/* ========================= */
-
-.mission-grid,
-.trust-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  gap: 30px;
-}
-
-.mission-card,
-.trust-card {
-
-  background: white;
-
-  padding: 30px;
-
-  border-radius: 15px;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-
-  transition: 0.35s;
-}
-
-.mission-card:hover,
-.trust-card:hover {
-
-  transform: translateY(-8px);
-
-  box-shadow:
-    0 15px 35px rgba(0,0,0,0.18),
-    0 8px 18px rgba(15,123,114,0.15);
-}
-
-/* ========================= */
-/* Qualification List */
-/* ========================= */
-
-.qualification-list {
-
-  margin-top: 20px;
-
-  padding-left: 20px;
-}
-
-.qualification-list li {
-
-  margin-bottom: 15px;
-
-  font-size: 1.05rem;
-}
-
-/* ========================= */
-/* Philosophy Section */
-/* ========================= */
-
-.philosophy-card {
-
-  max-width: 900px;
-
-  margin: auto;
-
-  background: white;
-
-  padding: 50px;
-
-  border-radius: 20px;
-
-  text-align: center;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-/* ========================= */
-/* Service Area */
-/* ========================= */
-
-.service-area-text {
-
-  text-align: center;
-
-  max-width: 800px;
-
-  margin: auto;
-
-  font-size: 1.1rem;
-}
-
-/* ========================= */
-/* CTA */
-/* ========================= */
-
-.about-cta {
-
-  background-color: #0f7b72;
-
-  color: white;
-
-  text-align: center;
-}
-
-.about-cta h2 {
-
-  font-size: 2.5rem;
-
-  margin-bottom: 20px;
-}
-
-.about-cta p {
-
-  margin-bottom: 30px;
-}
-
-/* ========================= */
-/* Responsive */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-  .about-profile-container,
-  .qualifications-container {
-
-    grid-template-columns: 1fr;
-  }
-
-  .philosophy-card {
-
+  .philosophy-card,
+  .home-visit-card {
     padding: 30px;
   }
 
-}
-/* ========================= */
-/* Service Images */
-/* ========================= */
-
-.service-card img {
-
-  width: 100%;
-
-  height: 220px;
-
-  object-fit: cover;
-
-  border-radius: 12px;
-
-  margin-bottom: 20px;
-}
-
-/* ========================= */
-/* Treatment Sections */
-/* ========================= */
-
-.treatment-container,
-.diabetic-container {
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 50px;
-
-  align-items: center;
-}
-
-.treatment-image img,
-.diabetic-image img {
-
-  width: 100%;
-
-  border-radius: 20px;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.treatment-content ul {
-
-  margin-top: 20px;
-
-  padding-left: 20px;
-}
-
-.treatment-content li {
-
-  margin-bottom: 12px;
-}
-
-/* ========================= */
-/* Foot Problems */
-/* ========================= */
-
-.problems-grid,
-.process-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-  gap: 25px;
-}
-
-.problem-card,
-.process-card {
-
-  background: white;
-
-  padding: 30px;
-
-  border-radius: 15px;
-
-  text-align: center;
-
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-  transition: 0.35s;
-}
-
-.problem-card:hover,
-.process-card:hover {
-
-  transform: translateY(-8px);
-
-  box-shadow:
-    0 15px 35px rgba(0,0,0,0.18),
-    0 8px 18px rgba(15,123,114,0.15);
-}
-
-/* ========================= */
-/* Home Visit */
-/* ========================= */
-
-.home-visit-card {
-
-  background-color: #0f7b72;
-
-  color: white;
-
-  padding: 60px;
-
-  border-radius: 20px;
-
-  text-align: center;
-}
-
-.home-visit-card h2 {
-
-  margin-bottom: 20px;
-}
-
-.home-visit-card p {
-
-  margin-bottom: 30px;
-}
-
-/* ========================= */
-/* CTA */
-/* ========================= */
-
-.services-cta {
-
-  background-color: #f06e65;
-
-  color: white;
-
-  text-align: center;
-}
-
-.services-cta h2 {
-
-  font-size: 2.5rem;
-
-  margin-bottom: 20px;
-}
-
-.services-cta p {
-
-  margin-bottom: 30px;
-}
-
-/* ========================= */
-/* Responsive */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-  .treatment-container,
-  .diabetic-container {
-
-    grid-template-columns: 1fr;
+  .whatsapp-float {
+    width: 60px;
+    height: 60px;
   }
 
-  .home-visit-card {
-
-    padding: 35px 25px;
+  .whatsapp-float img {
+    width: 32px;
   }
 
-}
-/* ========================= */
-/* Service Button */
-/* ========================= */
-
-.service-btn {
-
-  display: inline-block;
-
-  margin-top: 20px;
-
-  background-color: #0f7b72;
-
-  color: white;
-
-  padding: 12px 22px;
-
-  border-radius: 8px;
-
-  text-decoration: none;
-
-  font-weight: 600;
-
-  transition: all 0.3s ease;
-}
-
-.service-btn:hover {
-
-  background-color: #0b5f58;
-
-  transform: translateY(-2px);
-
-  box-shadow: 0 8px 18px rgba(15,123,114,0.25);
-}
-/* ========================= */
-/* Before & After Care */
-/* ========================= */
-
-.care-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-  gap: 30px;
-}
-
-.care-card {
-
-  background: white;
-
-  padding: 35px;
-
-  border-radius: 20px;
-
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-
-  transition: 0.35s ease;
-}
-
-.care-card:hover {
-
-  transform: translateY(-8px);
-
-  box-shadow:
-    0 15px 35px rgba(0,0,0,0.18),
-    0 8px 18px rgba(15,123,114,0.15);
-}
-
-.care-card h3 {
-
-  margin-bottom: 20px;
-
-  color: #0f7b72;
-}
-
-.care-card ul {
-
-  padding-left: 20px;
-}
-
-.care-card li {
-
-  margin-bottom: 12px;
-}
-
-/* ========================= */
-/* Service Areas */
-/* ========================= */
-
-.areas-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-
-  gap: 20px;
-}
-
-.area-card {
-
-  background-color: #0f7b72;
-
-  color: white;
-
-  padding: 25px;
-
-  text-align: center;
-
-  border-radius: 12px;
-
-  font-weight: bold;
-
-  transition: 0.3s ease;
-}
-
-.area-card:hover {
-
-  transform: translateY(-5px);
-
-  background-color: #0c5f58;
-
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
