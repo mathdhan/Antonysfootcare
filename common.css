@@ -791,9 +791,57 @@ section {
 
   /* Footer */
 
-  .footer {
+ .footer {
+
+    text-align: left;
+
+    padding-top: 40px;
+  }
+
+  .footer-container {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    padding-bottom: 30px;
+  }
+
+  .footer-column h3 {
+
+    font-size: 1.1rem;
+
+    margin-bottom: 12px;
+  }
+
+  .footer-column p,
+  .footer-links a {
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+  }
+
+  .footer-links li {
+
+    margin-bottom: 8px;
+  }
+
+  .footer-bottom {
+
+    font-size: 0.8rem;
+
+    padding: 15px 10px;
+
     text-align: center;
   }
+.footer-column:first-child {
+
+    grid-column: 1 / -1;
+  }
+
 
   /* Sections */
 
