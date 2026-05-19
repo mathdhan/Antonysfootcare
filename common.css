@@ -906,3 +906,22 @@ section {
   }
 
 }
+/* ========================= */
+/* Hide Close Button on Desktop */
+/* ========================= */
+
+.close-menu {
+  display: none;
+}
+
+/* ========================= */
+/* Mobile Only */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .close-menu {
+    display: block;
+  }
+
+}
