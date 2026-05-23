@@ -182,6 +182,170 @@
 
 </section>
 
+  <!-- ========================= -->
+<!-- Book Appointment Section -->
+<!-- ========================= -->
+
+<section class="appointment-section">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Book an Appointment</h2>
+
+      <p>
+        Complete the form below and Antony will contact you to confirm your appointment.
+      </p>
+    </div>
+
+    <form class="appointment-form"
+   action="https://formspree.io/f/mzdwvzkw"
+  method="POST">
+
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Enter your full name"
+          required
+        >
+      </div>
+
+      <!-- Phone -->
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+
+        <input 
+          type="tel" 
+          id="phone" 
+          name="phone" 
+          placeholder="Enter your phone number"
+          required
+        >
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email address"
+          required
+        >
+      </div>
+
+      <!-- Foot Problem -->
+      <div class="form-group">
+        <label for="problem">Foot Problem</label>
+
+        <select id="problem" name="problem" required>
+          <option value="">Select a foot problem</option>
+          <option>General Foot Care</option>
+          <option>Diabetic Foot Care</option>
+          <option>Toenail Problems</option>
+          <option>Corns & Calluses</option>
+          <option>Heel Pain</option>
+          <option>Ingrown Toenails</option>
+          <option>Fungal Nail Treatment</option>
+          <option>Foot Pain</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Appointment Date -->
+      <div class="form-group">
+        <label for="date">Preferred Appointment Date</label>
+
+        <input 
+          type="date" 
+          id="date" 
+          name="date"
+          required
+        >
+      </div>
+
+      <!-- Appointment Time -->
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+
+        <input 
+          type="time" 
+          id="time" 
+          name="time"
+          required
+        >
+      </div>
+
+      <!-- Diabetes -->
+      <div class="form-group">
+        <label>Do you have diabetes?</label>
+
+        <div class="radio-group">
+          <label><input type="radio" name="diabetes" value="Yes"> Yes</label>
+
+          <label><input type="radio" name="diabetes" value="No"> No</label>
+        </div>
+      </div>
+
+      <!-- Foot Pain -->
+      <div class="form-group">
+        <label>Are you experiencing foot pain?</label>
+
+        <div class="radio-group">
+          <label><input type="radio" name="pain" value="Yes"> Yes</label>
+
+          <label><input type="radio" name="pain" value="No"> No</label>
+        </div>
+      </div>
+
+      <!-- Mobility -->
+      <div class="form-group">
+        <label>Do you have mobility issues?</label>
+
+        <div class="radio-group">
+          <label><input type="radio" name="mobility" value="Yes"> Yes</label>
+
+          <label><input type="radio" name="mobility" value="No"> No</label>
+        </div>
+      </div>
+
+      <!-- Notes -->
+      <div class="form-group">
+        <label for="notes">Additional Notes</label>
+
+        <textarea 
+          id="notes" 
+          name="notes" 
+          rows="5"
+          placeholder="Please provide any additional information..."
+        ></textarea>
+      </div>
+<!-- Success Redirect -->
+<input 
+  type="hidden" 
+  name="_next" 
+  value="thankyou.html"
+>
+
+      <!-- Submit Button -->
+      <button type="submit" class="appointment-btn">
+        Submit Appointment Request
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
 <!-- ========================= -->
 <!-- COMMON FOOTER -->
 <!-- Save this section in each page -->
