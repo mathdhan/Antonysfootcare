@@ -160,6 +160,41 @@ header {
   max-width: 800px;
   margin: auto;
 }
+/* ========================= */
+/* Hero Button */
+/* ========================= */
+
+.hero-btn {
+
+  display: inline-block;
+
+  background-color: #0f7b72;
+
+  color: white;
+
+  padding: 15px 34px;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.hero-btn:hover {
+
+  background-color: #0b5f58;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 22px rgba(15,123,114,0.25);
+}
 
 /* ========================= */
 /* COMMON SECTION */
@@ -771,7 +806,16 @@ section {
   .hero-content p {
     font-size: 1rem;
   }
+  .hero-btn {
 
+    padding: 14px 26px;
+
+    font-size: 0.95rem;
+
+    width: auto;
+
+    max-width: 90%;
+  }
   /* Grids */
 
   .welcome-container,
