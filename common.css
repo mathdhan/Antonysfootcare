@@ -463,7 +463,8 @@ section {
 
 .service-card:hover img {
 
-  transform: scale(1.04);
+  transform: scale(1.08);
+  filter: brightness(1.03);
 }
 
 /* ========================= */
