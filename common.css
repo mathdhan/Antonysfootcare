@@ -436,7 +436,13 @@ section {
   overflow: hidden;
 }
 
+/* ========================= */
+/* Services Page Card Color */
+/* ========================= */
 
+.services-page-card {
+  background: #e0f2fe; /* light blue */
+}
 
 .service-card img {
 
