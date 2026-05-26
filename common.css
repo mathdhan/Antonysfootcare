@@ -348,7 +348,6 @@ section {
 /* ========================= */
 
 .service-card,
-.why-card,
 .testimonial-card,
 .contact-card,
 .mission-card,
@@ -362,6 +361,16 @@ section {
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   transition: all 0.35s ease;
   border: 1px solid transparent;
+}
+/* ========================= */
+/* Why Choose Me Section */
+/* ========================= */
+
+.why-card {
+
+  background-color: #dff6f3;
+
+  border-left: 5px solid #0f766e;
 }
 
 .service-card:hover,
