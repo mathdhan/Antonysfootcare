@@ -270,14 +270,33 @@ section {
 /* ========================= */
 
 .welcome-container {
+
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 50px;
-  align-items: center;
+
+  align-items: stretch;
 }
 
+/* ========================= */
+/* Welcome Section Image */
+/* ========================= */
+
 .welcome-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 650px;
+
+  object-fit: cover;
+
   border-radius: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* ========================= */
@@ -846,6 +865,12 @@ section {
   .treatment-container,
   .diabetic-container {
     grid-template-columns: 1fr;
+  }
+   .welcome-image img {
+
+    min-height: auto;
+
+    height: auto;
   }
 
   /* Hours */
