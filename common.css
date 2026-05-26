@@ -441,7 +441,7 @@ section {
 /* ========================= */
 
 .services-page-card {
-  background: #b898a2; /* light blue */
+  background: #c6e7f5; /* light blue */
 }
 
 .service-card img {
@@ -463,7 +463,7 @@ section {
 
 .service-card:hover img {
 
-  transform: scale(1.08);
+  transform: scale(1.04);
 }
 
 /* ========================= */
